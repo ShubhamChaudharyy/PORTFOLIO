@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body {
+	color: #03293c;
+	
+	
+	
+	overflow-x: hidden;
+	
+
+}
+.td{
+	
+	overflow: hidden;
+}
+.toggle_menu{
+	position: fixed;
+	padding: 15px  20px 15px 20px;
+	color: white;
+	cursor: pointer;
+	z-index: 100000000;
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+     font-size: 5em;
+     transition: all 0.3s ease-in-out;
+
+
+}
+
+.sidebar_menu{
+	position: fixed;
+	width: 350px;
+	
+	
+	overflow: hidden;
+	height: 100vh;
+	background-color: transparent;
+	max-height: 100vh;
+	opacity: 0.9;
+	transition:all 0.3s ease-in-out;
+	margin-left: -350px;
+
+
+
+}
+.tb1{
+	width: 0px;
+	
+   
+	overflow: hidden;
+	height: 500px;
+	background-color: black;
+	max-height: 100vh;
+	opacity: 0;
+	 transition: all 0.3s ease-in-out;
+	
+}
+.tb1s{
+	width: 300px;
+
+	
+	
+	overflow: hidden;
+	height: 500px;
+	background-color: #03293c;
+
+	max-height: 100vh;
+	opacity: 1;
+	
+}
+
+
+.fa-times-circle{
+	right: 10px;
+	top: 10px;
+	opacity:0.7;
+	cursor:pointer;
+	position: absolute;
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+.fa-times-circle:hover{
+	opacity:1.0;
+}
+.boxed_item{
+	font-family:  "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 200;
+	display: inline-block;
+
+	padding: 10px 20px;
+	border: solid 2px white;
+	box-sizing: border-box;
+	font-size: 25px;
+	color: white;
+	margin-top: 270px;
+
+}
+.boxed_big{
+    display: inline-block;
+	padding: 10px 20px;
+	
+	font-size: 90px;
+	color: white;
+	margin-top: 80px;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: 900;
+	animation: transitionx 1.9s; 
+}
+
+.workd{
+	color: white;
+	font-family:  'Rubik',sans-serif;
+	font-weight: 200;
+	font-size: 13px;
+	text-align: center;
+	padding:  5px;
+}
+
+.list{
+margin-left: 25px;
+display: block;
+width: 200px;
+margin:20px 0px;
+}
+.list_items{
+	font-weight: 500;
+	font-family:  "Source Sans Pro", Helvetica, sans-serif;
+	color: white;
+	padding: 12px 40px;
+	font-size: 16px;
+	box-sizing: border-box;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	display: inline-block;
+
+}
+.list_items:hover{
+	background-color: white;
+	color: black;
+	width: 350px;
+	display: inline-block;
+}
+.boxed_item:hover{
+	background-color: white;
+	color: #111;
+	transition: all 0.3s ease-in-out;
+}
+.hide_menu{
+	position: fixed;
+	width: 350px;
+	color: white;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 100vh;
+	background-color:transparent;
+	max-height: 100vh;
+	
+	transition:all 0.3s ease-in-out;
+	
+
+}
+.opacity_one{
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+
+@keyframes transitionx {
+  from{
+    opacity: 0;
+    transform: translate3d(0,200px,0);
+
+  }
+  to{
+       opacity: 1;
+       transform: translate3d(0,0,0);
+  }
+}
+@keyframes transitionx1{
+	from{
+opacity: 0;
+
+	}
+	to{
+opacity: 1;
+	}
+}
+
+p{
+	flex: row;
+	flex-direction: row;
+}
+.navd a{
+    
+   
+   color: black;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
+}
+a{
+	text-decoration: none;
+}
+.btn5:hover {
+	transform: scale(1.05);
+	opacity: 0.7;
+	color: #780c82;
+	
+}
+.circle{
+   background-color: none;
+   border:2px solid white;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   transition: 0.2s linear;
+
+}
+.circle:hover{
+	border-color:black;
+	transform: scale(1.05);
+}
+.circle:hover i{
+	color: black;
+
+}
+
+
+ 
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered p{
+	font-family:Open Sans Condensed;
+    color: white;
+
+
+}
+h1 span{
+	font-family:"Source Sans Pro", Helvetica, sans-serif ;
+	font-weight: 600;
+	
+   display: inline-block;
+  
+    
+
+}
+.hidaf{
+
+
+	
+}
+@keyframes xx{
+	from{
+         opacity: 0;
+         transform: translate3d(0,0,0);
+        
+	}
+	to {
+opacity: 1;
+
+ transform:  translate3d(0,-20px,0)
+	}
+}
+.fa-arrow-down:hover{
+	color: black;
+
+}
+.tb2{
+	height: 0px;
+	width: 500px;
+
+	background-color:  #03293c;
+	
+	transition: all 0.4s ease-in-out;
+	opacity: 0;
+	overflow:hidden;
+  margin-top: 300px;	
+	
+}
+.tb2s{
+height: 200px;
+	width: 500px;
+	opacity: 1;
+	background-color: #03293c;
+	
+opacity: 1;
+vertical-align: bottom;
+	
+	overflow:hidden;
+	
+}
